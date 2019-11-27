@@ -1,12 +1,16 @@
 # Meme Generator
-Meme generator for teaching principles for creating web-apps.
-
-# Deployment
-1) npm install (both in server, and in the main dir)
-2) install MongoDB
+Meme generator for teaching principles for creating web-apps. This is the undeployed version of the webapp.
 
 # How to Run
-1) npm run dev
+1) In the main directory, run the command **npm install**
+2) Create an account for the imgflip api.
+3) Create a config.json file in the **server** directory. The config.json file should be in the following format:
+  {
+    "username": [your api imgflip username],
+    "password": [your api imgflip password],
+  }
+4) In the **server** directory, run the command, **npm install**
+5) In the main directory, run **npm run dev** in order to run the project.
 
 ## Useful Links
 https://www.codementor.io/kakarganpat/how-to-setup-react-and-node-js-in-a-project-koxwqbssl

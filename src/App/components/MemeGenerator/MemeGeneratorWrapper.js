@@ -59,6 +59,7 @@ class MemeGeneratorWrapper extends React.Component {
   /* called when caption text is added to the array */
   handleMemeText = (index,text) => {
     let newMemeTextArray = this.state.memeText;
+    console.log(text);
     newMemeTextArray[index] = text;
     this.setState((state) => ({
       memeText: newMemeTextArray

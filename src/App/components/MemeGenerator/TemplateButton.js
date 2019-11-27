@@ -14,7 +14,14 @@ class TemplateButton extends React.Component {
   */
 
   render() {
-    return null;
+    return <img 
+              className="template-button" 
+              src={this.props.meme.url} 
+              onClick={this.props.reselectMeme}
+              onMouseOver={this.props.changeText}
+              onMouseLeave={this.props.resetText}>
+              
+           </img>;
   }
 }
 export default TemplateButton;
