@@ -3,7 +3,6 @@ const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
 const mongo = require('mongodb');
-const config = require('./config.json');
 const qs = require('qs');
 const path = require('path');
 
