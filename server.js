@@ -46,7 +46,7 @@ server.listen(port, '0.0.0.0', () => {
 // Needed to process body parameters for POST requests
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dir, 'build')));
+app.use(express.static(path.join(__dirname, 'build')));
 
 function sendToDatabase(fields) {
   memeCollection.insertOne(fields, (err, res) => {
