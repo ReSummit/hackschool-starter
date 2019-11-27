@@ -68,10 +68,6 @@ function populateMemeFields(photoURL, topText, bottomText, user){
   return memeObj;
 }
 
-app.get('*', function(req,res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
-
 app.get('/test', (req, res) => {
   sendToMemeDatabase({
     names: "Daniel Truong", 
@@ -171,3 +167,8 @@ app.post('/upload', (req, res) => {
       })
       .catch( (err) => { throw err; } );
 });
+
+app.get('*', function(req,res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
